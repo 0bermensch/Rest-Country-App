@@ -1,0 +1,19 @@
+.countriescard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 30px;
+  border: 2px black;
+
+  &__info {
+    margin: 10px 10px;
+  }
+
+  &__flag {
+    height: 6rem;
+    width: 10rem;
+  }
+
+  &__countryname {
+    font-weight: bold;
+  }
+}
