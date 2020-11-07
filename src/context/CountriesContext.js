@@ -42,9 +42,8 @@ const CountriesProvider = ({ children }) => {
     return name;
   };
 
-  const getCountry = (code) => {
+  const getCountry = (code) =>
     allCountries.find((country) => country.alpha3Code === code);
-  };
 
   useEffect(() => {
     const countriesByRegion = searchByRegion(allCountries, region);

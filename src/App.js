@@ -6,7 +6,7 @@ import {
 } from "./context/CountriesContext";
 import { getCountries } from "./api/ApiCalls";
 import AllCountries from "./pages/AllCountries";
-import CountryDetail from "./pages/CountryDetail";
+import CountryDetail from "./pages/CountryDetail/CountryDetail";
 
 function App() {
   const { theme, setCountries, setAllCountries } = useContext(CountriesContext);
