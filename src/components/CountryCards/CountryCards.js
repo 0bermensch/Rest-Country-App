@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { CountriesContext } from "../context/CountriesContext";
+import { CountriesContext } from "../../context/CountriesContext";
 import { withRouter } from "react-router-dom";
 
 const CountryCards = ({ history }) => {

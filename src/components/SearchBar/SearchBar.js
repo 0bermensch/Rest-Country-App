@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import CountrySearch from "./CountrySearch";
-import RegionSelect from "./RegionSelect";
+import CountrySearch from "./CountrySearch/CountrySearch";
+import RegionSelect from "./RegionSearch/RegionSelect";
 import { CountriesContext } from "../context/CountriesContext";
 
 const SearchBar = () => {

@@ -5,7 +5,7 @@ import {
   CountriesProvider,
 } from "./context/CountriesContext";
 import { getCountries } from "./api/ApiCalls";
-import AllCountries from "./pages/AllCountries";
+import AllCountries from "./pages/AllCountries/AllCountries";
 import CountryDetail from "./pages/CountryDetail/CountryDetail";
 
 function App() {

@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
-import { CountriesContext } from "../context/CountriesContext";
+import { CountriesContext } from "../../context/CountriesContext";
 import SearchBar from "../components/SearchBar";
-import CountryCards from "../components/CountryCards";
+import CountryCards from "../../components/CountryCards/CountryCards";
 
 const AllCountries = () => {
   const { theme } = useContext(CountriesContext);
