@@ -1,15 +1,22 @@
 import React, { useContext } from "react";
 import { CountriesContext } from "../../context/CountriesContext";
-import SearchBar from "../components/SearchBar";
+import SearchBar from "../../components/SearchBar/SearchBar";
 import CountryCards from "../../components/CountryCards/CountryCards";
+import styles from "./AllCountries.module.scss";
 
 const AllCountries = () => {
   const { theme } = useContext(CountriesContext);
 
   return (
-    <div className="allcountries">
+    <div
+      className={`${styles.CountryGridPage} ${
+        theme === "dark" ? styles.dark : null
+      }`}
+    >
       <SearchBar />
-      <CountryCards />
+      <div className={styles.container}>
+        <CountryCards />
+      </div>
     </div>
   );
 };

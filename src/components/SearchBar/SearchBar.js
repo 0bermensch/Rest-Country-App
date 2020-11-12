@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
-import CountrySearch from "./CountrySearch/CountrySearch";
-import RegionSelect from "./RegionSearch/RegionSelect";
-import { CountriesContext } from "../context/CountriesContext";
+import CountrySearch from "../CountrySearch/CountrySearch";
+import RegionSelect from "../RegionSearch/RegionSelect";
+import { CountriesContext } from "../../context/CountriesContext";
+import styles from "./SearchBar.module.scss";
 
 const SearchBar = () => {
   const {
@@ -13,11 +14,18 @@ const SearchBar = () => {
     setRegion,
   } = useContext(CountriesContext);
   return (
-    <div className="searchbar">
+    <div className={styles.SearchBar}>
       <CountrySearch
         theme={theme}
         searchText={searchText}
         searchHandler={setSearchText}
+      />
+      <RegionSelect
+        list={regionList}
+        theme={theme}
+        selectedItem={region}
+        onSelect={setRegion}
+        buttonText="Filter by Region"
       />
     </div>
   );

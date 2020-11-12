@@ -1,18 +1,16 @@
-// Font Weights
-$light: 300; // Thin
-$medium: 600; // Medium
-$bold: 800; // Bold
+$light: 300;
+$medium: 600;
+$bold: 800;
 
-// Borders & Shadows
 $border-radius: 0.3rem;
 $element-box-shadow-light: 0 5px 10px -5px #ccc, 0 -1px 10px -5px #eee;
 $element-box-shadow-dark: 0 5px 10px -5px #222, 0 -1px 10px -5px #222;
-$dark-blue: hsl(209, 23%, 22%); // Dark Mode Elements
-$very-dark-blue: hsl(207, 26%, 17%); // Dark Mode Background
-$very-dark-blue-text: hsl(200, 15%, 8%); // Light Mode Text
-$dark-gray: hsl(0, 0%, 52%); // Light Mode Input
-$very-light-gray: hsl(0, 0%, 98%); // Light Mode Background
-$white: hsl(0, 0%, 100%); // Dark Mode Text & Light Mode Elements
+$dark-blue: hsl(209, 23%, 22%);
+$very-dark-blue: hsl(207, 26%, 17%);
+$very-dark-blue-text: hsl(200, 15%, 8%);
+$dark-gray: hsl(0, 0%, 52%);
+$very-light-gray: hsl(0, 0%, 98%);
+$white: hsl(0, 0%, 100%);
 
 @mixin small-and-up {
   @media only screen and (min-width: 600px) {

@@ -7,6 +7,8 @@ import {
 import { getCountries } from "./api/ApiCalls";
 import AllCountries from "./pages/AllCountries/AllCountries";
 import CountryDetail from "./pages/CountryDetail/CountryDetail";
+import Header from "./components/Header/Header";
+import "./App.scss";
 
 function App() {
   const { theme, setCountries, setAllCountries } = useContext(CountriesContext);
@@ -19,9 +21,10 @@ function App() {
   }, [setCountries, setAllCountries]);
 
   return (
-    <div className="App">
+    <div className={`App ${theme === "dark" ? "dark" : ""}`}>
       <Router>
         <Switch>
+          <Header />
           <Route path="/" exact component={AllCountries} />
           <Route path="/:countryCode" exact component={CountryDetail} />
         </Switch>
