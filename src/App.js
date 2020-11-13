@@ -1,9 +1,6 @@
 import React, { useEffect, useContext } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import {
-  CountriesContext,
-  CountriesProvider,
-} from "./context/CountriesContext";
+import { CountriesContext } from "./context/CountriesContext";
 import { getCountries } from "./api/ApiCalls";
 import AllCountries from "./pages/AllCountries/AllCountries";
 import CountryDetail from "./pages/CountryDetail/CountryDetail";
@@ -22,13 +19,9 @@ function App() {
 
   return (
     <div className={`App ${theme === "dark" ? "dark" : ""}`}>
-      <Router>
-        <Switch>
-          <Header />
-          <Route path="/" exact component={AllCountries} />
-          <Route path="/:countryCode" exact component={CountryDetail} />
-        </Switch>
-      </Router>
+      <Header />
+      <Route path="/" exact component={AllCountries} />
+      <Route path="/:countryCode" component={CountryDetail} />
     </div>
   );
 }

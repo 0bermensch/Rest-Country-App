@@ -14,7 +14,9 @@ const Header = () => {
     >
       <div className={styles.Header}>
         <p>
-          <Link to="/">Where in the world?</Link>
+          <Link style={{ textDecoration: "none", color: "black" }} to="/">
+            Where in the world?
+          </Link>
         </p>
         <ThemeSwitch theme={theme} toggleTheme={toggleTheme} />
       </div>

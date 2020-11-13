@@ -9,7 +9,7 @@ const AllCountries = () => {
 
   return (
     <div
-      className={`${styles.CountryGridPage} ${
+      className={`${styles.AllCountryPage} ${
         theme === "dark" ? styles.dark : null
       }`}
     >
