@@ -1,5 +1,5 @@
 import React, { useEffect, useContext } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import { CountriesContext } from "./context/CountriesContext";
 import { getCountries } from "./api/ApiCalls";
 import AllCountries from "./pages/AllCountries/AllCountries";
